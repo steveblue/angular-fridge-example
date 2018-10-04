@@ -2,9 +2,9 @@ const spawn = require('child_process').spawn;
 const fs = require('fs');
 
 module.exports = {
-    defaultProject: '{{projectName}}',
+    defaultProject: 'fridge-app',
     projects: {
-        '{{projectName}}': {
+        'fridge-app': {
             root: '',
             sourceRoot: 'src',
             projectType: 'application',
@@ -13,7 +13,7 @@ module.exports = {
                 build: {
                     builder: 'angular-rollup',
                     options: {
-                        outputPath: 'dist/{{projectName}}',
+                        outputPath: 'dist/fridge-app',
                         styles: ['src/style/style.scss'],
                         stylePreprocessorOptions: {
                             includePaths: ['src/style'],
@@ -56,7 +56,7 @@ module.exports = {
                                 "systemjs/dist/system.js"
                             ],
                             src: "node_modules",
-                            dist: "dist/{{projectName}}/lib"
+                            dist: "dist/fridge-app/lib"
                         }
 
                     },

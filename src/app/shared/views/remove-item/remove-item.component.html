@@ -1,0 +1,22 @@
+<form [formGroup]="form" class="form__actual" autocomplete="off">
+
+
+  <select formControlName="uuid" *ngIf="groceries.length > 0">
+    <option [value]="item" *ngFor="let item of groceries">{{item}}</option>
+  </select>
+
+
+  <h3 class="a__headline is--warning" *ngIf="groceries.length === 0">
+      There is nothing in the fridge.
+  </h3>
+
+
+  <div class="a__button" *ngIf="groceries.length > 0" [ngClass]="{'is--disabled': !form.valid, 'is--success': isDone }" (click)="onSubmit()">
+    <span *ngIf="!isDone">Remove</span>
+    <span *ngIf="isDone" class="a__icon i__done"></span>
+  </div>
+
+  <a [routerLink]="['/stock/add']">Need to add something?</a>
+
+
+</form>
