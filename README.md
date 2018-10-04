@@ -17,7 +17,7 @@ Navigating to `http://localhost:4200` will redirect the user to `http://localhos
 
 The user can add any type and quantity of item already registered in the fridge.
 
-![Adding Groceries to the Fridge](assets/add-item.png)
+![Adding Groceries to the Fridge](https://cdn.rawgit.com/steveblue/angular-fridge-example/a47a50cc/assets/add-item.png)
 
 Another view would be required to register a type with the fridge, i.e. potatoes are not listed so the user would have to register a potato.
 
@@ -27,4 +27,4 @@ Another view would be required to register a type with the fridge, i.e. potatoes
 
 The user can remove items by uuid. This of course would need refinement in the real world, but will suffice for this example.
 
-![Removing Groceries from the Fridge](assets/remove-item.png)
+![Removing Groceries from the Fridge](https://cdn.rawgit.com/steveblue/angular-fridge-example/a47a50cc/assets/remove-item.png)
